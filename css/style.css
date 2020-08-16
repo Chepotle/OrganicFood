@@ -1148,7 +1148,3 @@ main {
     min-height: 100px;
   }
 }
-
-@media (max-width: 550.98px) {
-  margin-top: 0;
-}
