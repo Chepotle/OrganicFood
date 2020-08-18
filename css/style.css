@@ -123,7 +123,6 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 230vh;
 }
 
 .header {
@@ -225,7 +224,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 515px;
+  margin-top: 115px;
 }
 
 .intro_block_2 {
@@ -284,7 +283,7 @@ main {
 }
 
 .quality {
-  margin-top: 70px;
+  margin-top: 130px;
   position: relative;
 }
 
@@ -951,19 +950,11 @@ main {
           justify-content: flex-end;
 }
 
-@media (max-width: 1199.98px) {
-  .intro_block {
-    margin-top: 415px;
-  }
+.carousel-indicators {
+  bottom: -20px;
 }
 
 @media (max-width: 991.98px) {
-  .intro_block {
-    margin-top: 175px;
-  }
-  .intro {
-    min-height: 1550px;
-  }
   .qualiti_text {
     position: static;
     text-align: center;
@@ -1027,9 +1018,6 @@ main {
   .tasty_title {
     padding: 0;
   }
-  .intro {
-    min-height: 1400px;
-  }
 }
 
 @media (max-width: 767.98px) {
@@ -1040,6 +1028,12 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .intro_title {
+    margin-top: 80px;
+  }
+  .quality {
+    margin-top: 80px;
   }
   .blog_text {
     width: 90%;
@@ -1141,10 +1135,24 @@ main {
   .intro_item_text {
     font-size: 20px;
   }
+  .perfect_text {
+    width: 100%;
+  }
   .intro_agro {
     font-size: 20px;
   }
   .intro {
     min-height: 100px;
+  }
+  .prog_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prog_margin {
+    margin-left: 40px;
   }
 }

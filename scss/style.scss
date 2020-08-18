@@ -13,7 +13,6 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 230vh;
 }
 
 .header {
@@ -96,7 +95,7 @@ main {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    margin-top: 515px;
+    margin-top: 115px;
 }
 
 .intro_block_2 {
@@ -147,7 +146,7 @@ main {
 // Quality
 
 .quality {
-    margin-top: 70px;
+    margin-top: 130px;
     position: relative;
 }
 
@@ -739,26 +738,20 @@ main {
     justify-content: flex-end;
 }
 
-// Media
+//Slider
 
-// 1200
-
-@media (max-width: 1199.98px) {
-    .intro_block {
-        margin-top: 415px;
-    }
+.carousel-indicators {
+    bottom: -20px;
 }
+
+
+
+
+// Media
 
 // 991
 
 @media (max-width: 991.98px) {
-    .intro_block {
-        margin-top: 175px;
-    }
-
-    .intro {
-        min-height: 1550px;
-    }
 
     .qualiti_text {
         position: static;
@@ -830,9 +823,6 @@ main {
         padding: 0;
     }
 
-    .intro {
-        min-height: 1400px;
-    }
 }
 
 
@@ -842,6 +832,14 @@ main {
     .blog_item {
         display: flex;
         justify-content: center;
+    }
+
+    .intro_title {
+        margin-top: 80px;
+    }
+
+    .quality {
+        margin-top: 80px;
     }
     
     .blog_text {
@@ -969,11 +967,24 @@ main {
         font-size: 20px;
     }
 
+    .perfect_text {
+        width: 100%;
+    }
+
     .intro_agro {
         font-size: 20px;
     }
 
     .intro {
         min-height: 100px;
+    }
+
+    .prog_item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .prog_margin {
+        margin-left: 40px;
     }
 }
