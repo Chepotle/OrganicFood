@@ -50,6 +50,41 @@ main {
     }
 }
 
+.header_menu_2 {
+    display: none;
+    li {
+        &:hover {
+            &::after {
+                width: 100%;
+                transition-duration: .5s;
+            }
+        }
+        position: relative;
+        &::after {
+            display: block;
+            content: "";
+            width: 0%;
+            position: absolute;
+            height: 2px;
+            background-color: #fcdb5a;
+            top: 42px;
+            left: 0%;
+            transition-duration: .5s;
+        }
+        a {
+            color: #ffffff;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+.intro_header_button {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header_button {
     width: 153px;
     height: 45px;
@@ -744,6 +779,54 @@ main {
     bottom: -20px;
 }
 
+// Burger
+
+.burger_menu {
+    display: none;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateX(-50%);
+    span {
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        left: 0;
+        top: 13px;
+        background-color: #fff;
+    }
+    &::before {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        content: "";
+        height: 2px;
+    }
+    &::after {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        content: "";
+        height: 2px;
+    }
+}
+
+.burger_position {
+    top: 110px !important;
+    transition-duration: .5s;
+}
+
+.burger_margin {
+    margin-top: 155px !important;
+    transition-duration: .5s;
+}
+
 
 
 
@@ -752,7 +835,36 @@ main {
 // 991
 
 @media (max-width: 991.98px) {
+    .burger_menu {
+        display: block;
+    }
 
+    .header_menu_2 {
+        display: block;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header_menu {
+        display: none;
+    }
+
+    .intro_header_button {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: -19px;
+        top: -250px;
+        transition-duration: .5s;
+        align-items: flex-end;
+    }
+
+    .header_menu_2 li {
+        margin-bottom: 10px;
+    }
+    
     .qualiti_text {
         position: static;
         text-align: center;
@@ -823,12 +935,18 @@ main {
         padding: 0;
     }
 
+    .intro_title {
+        transition-duration: .5s;
+    }
+
 }
 
 
 // 767
 
 @media (max-width: 767.98px) {
+
+
     .blog_item {
         display: flex;
         justify-content: center;
@@ -987,4 +1105,6 @@ main {
     .prog_margin {
         margin-left: 40px;
     }
+
+    
 }
