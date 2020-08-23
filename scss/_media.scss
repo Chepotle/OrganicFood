@@ -1,0 +1,269 @@
+
+// Media
+
+
+// 991
+
+@media (max-width: 991.98px) {
+
+    .burger {
+        display: block;
+    }
+
+    .header_menu_2 {
+        display: block;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header_menu {
+        display: none;
+    }
+    
+    .qualiti_text {
+        position: static;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .service {
+        margin-top: 35px;
+    }
+
+    .service_item {
+        margin-bottom: 15px;
+    }
+
+    .perfect_block_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .perfect_block_title {
+        text-align: center;
+    }
+
+    .prog_item {
+        margin-bottom: 15px;
+    }
+
+    .contacts_map {
+        display: none;
+    }
+    
+    .contacts_info {
+        justify-content: center;
+    }
+
+    .contact_menu {
+        text-align: center;
+    }
+
+    .contacts_map_2 {
+        display: block;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .tasty_img {
+        position: static;
+    }
+
+    .tasty_title {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .perfect_block {
+        position: static;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .slider_text {
+        font-size: 20px;
+    }
+
+    .tasty_title {
+        padding: 0;
+    }
+
+    .intro_header_button {
+        display: none;
+    }
+
+}
+
+
+// 767
+
+@media (max-width: 767.98px) {
+
+
+    .blog_item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro_title {
+        margin-top: 80px;
+    }
+
+    .quality {
+        margin-top: 80px;
+    }
+    
+    .blog_text {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .quality_slice {
+        display: none;
+    }
+
+    .service_text {
+        width: 90%;
+    }
+
+    .perfect_button {
+        margin: 0 auto;
+    }
+
+    .perfect_text {
+        width: 85%;
+    }
+
+    .perfect_block_img {
+        margin: 20px 0;
+    }
+
+    .perfect_block_title_margin {
+        margin-top: 20px;
+    }
+
+    .perfect_block_text {
+        text-align: center;
+    }
+
+    .prog_text {
+        width: 90%;
+    }
+
+    .prog_block {
+        justify-content: center;
+    }
+
+    .prog_text {
+        margin-bottom: 60px;
+    }
+
+    .prog {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service_text {
+        margin-bottom: 60px;
+    }
+
+    .blog_img {
+        margin-bottom: 20px;
+    }
+
+    .slider_text {
+        font-size: 18px;
+    }
+
+    .contacts_email {
+        margin-bottom: 23px;
+    }
+
+    .contacts_social {
+        justify-content: center;
+        margin-top: 23px;
+    }
+
+    .contacts_info {
+        text-align: center;
+    }
+
+    .contacts_info {
+        margin-top: 45px;
+    }
+
+    .footer_block {
+        text-align: center;
+    }
+
+    .footer_section {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .brands_block {
+        flex-direction: column;
+    }
+
+    .service_title {
+        text-align: center;
+    }
+
+    .intro_title {
+        text-align: center;
+    }
+
+    .intro_block {
+        display: none;
+    }
+
+    .intro_block_2 {
+        display: block;
+    }
+
+    .intro_agro {
+        flex-grow: 1;
+    }
+    
+}
+
+// 575
+
+@media (max-width: 575.98px) {
+    .burger_menu li {
+        margin-bottom: 35px;
+    }
+    
+    .tasty {
+        min-height: 400px;
+    }
+
+    .intro_item_text {
+        font-size: 20px;
+    }
+
+    .perfect_text {
+        width: 100%;
+    }
+
+    .intro_agro {
+        font-size: 20px;
+    }
+
+    .intro {
+        min-height: 100px;
+    }
+
+    .prog_item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .prog_margin {
+        margin-left: 40px;
+    }   
+}

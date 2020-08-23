@@ -1,6 +1,7 @@
 @import "_fonts";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import "_reboot";
+@import "_burger";
 
 main {
     overflow: hidden;
@@ -26,7 +27,7 @@ main {
         &:hover {
             &::after {
                 width: 100%;
-                transition-duration: .5s;
+                transition-duration: 0.5s;
             }
         }
         position: relative;
@@ -37,44 +38,14 @@ main {
             position: absolute;
             height: 2px;
             background-color: #fcdb5a;
-            top: 42px;
+            top: 45px;
             left: 0%;
-            transition-duration: .5s;
+            transition-duration: 0.5s;
         }
         a {
             color: #ffffff;
             font-family: "Open Sans";
-            font-size: 16px;
-            font-weight: 400;
-        }
-    }
-}
-
-.header_menu_2 {
-    display: none;
-    li {
-        &:hover {
-            &::after {
-                width: 100%;
-                transition-duration: .5s;
-            }
-        }
-        position: relative;
-        &::after {
-            display: block;
-            content: "";
-            width: 0%;
-            position: absolute;
-            height: 2px;
-            background-color: #fcdb5a;
-            top: 42px;
-            left: 0%;
-            transition-duration: .5s;
-        }
-        a {
-            color: #ffffff;
-            font-family: "Open Sans";
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
         }
     }
@@ -92,7 +63,7 @@ main {
     background-color: #ffffff;
     color: #1b1b1b;
     font-family: Raleway;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     display: flex;
@@ -779,332 +750,5 @@ main {
     bottom: -20px;
 }
 
-// Burger
 
-.burger_menu {
-    display: none;
-    width: 40px;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateX(-50%);
-    span {
-        width: 100%;
-        position: absolute;
-        height: 2px;
-        left: 0;
-        top: 13px;
-        background-color: #fff;
-    }
-    &::before {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: #fff;
-        content: "";
-        height: 2px;
-    }
-    &::after {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background-color: #fff;
-        content: "";
-        height: 2px;
-    }
-}
-
-.burger_position {
-    top: 110px !important;
-    transition-duration: .5s;
-}
-
-.burger_margin {
-    margin-top: 155px !important;
-    transition-duration: .5s;
-}
-
-
-
-
-// Media
-
-// 991
-
-@media (max-width: 991.98px) {
-    .burger_menu {
-        display: block;
-    }
-
-    .header_menu_2 {
-        display: block;
-    }
-
-    .header {
-        position: relative;
-    }
-
-    .header_menu {
-        display: none;
-    }
-
-    .intro_header_button {
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: -19px;
-        top: -250px;
-        transition-duration: .5s;
-        align-items: flex-end;
-    }
-
-    .header_menu_2 li {
-        margin-bottom: 10px;
-    }
-    
-    .qualiti_text {
-        position: static;
-        text-align: center;
-        margin-top: 45px;
-    }
-
-    .service {
-        margin-top: 35px;
-    }
-
-    .service_item {
-        margin-bottom: 15px;
-    }
-
-    .perfect_block_img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .perfect_block_title {
-        text-align: center;
-    }
-
-    .prog_item {
-        margin-bottom: 15px;
-    }
-
-    .contacts_map {
-        display: none;
-    }
-    
-    .contacts_info {
-        justify-content: center;
-    }
-
-    .contact_menu {
-        text-align: center;
-    }
-
-    .contacts_map_2 {
-        display: block;
-    }
-
-    .contacts {
-        flex-direction: column;
-    }
-
-    .tasty_img {
-        position: static;
-    }
-
-    .tasty_title {
-        text-align: center;
-        margin-top: 0;
-    }
-
-    .perfect_block {
-        position: static;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    .slider_text {
-        font-size: 20px;
-    }
-
-    .tasty_title {
-        padding: 0;
-    }
-
-    .intro_title {
-        transition-duration: .5s;
-    }
-
-}
-
-
-// 767
-
-@media (max-width: 767.98px) {
-
-
-    .blog_item {
-        display: flex;
-        justify-content: center;
-    }
-
-    .intro_title {
-        margin-top: 80px;
-    }
-
-    .quality {
-        margin-top: 80px;
-    }
-    
-    .blog_text {
-        width: 90%;
-        margin-bottom: 25px;
-    }
-
-    .quality_slice {
-        display: none;
-    }
-
-    .service_text {
-        width: 90%;
-    }
-
-    .perfect_button {
-        margin: 0 auto;
-    }
-
-    .perfect_text {
-        width: 85%;
-    }
-
-    .perfect_block_img {
-        margin: 20px 0;
-    }
-
-    .perfect_block_title_margin {
-        margin-top: 20px;
-    }
-
-    .perfect_block_text {
-        text-align: center;
-    }
-
-    .prog_text {
-        width: 90%;
-    }
-
-    .prog_block {
-        justify-content: center;
-    }
-
-    .prog_text {
-        margin-bottom: 60px;
-    }
-
-    .prog {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .service_text {
-        margin-bottom: 60px;
-    }
-
-    .blog_img {
-        margin-bottom: 20px;
-    }
-
-    .slider_text {
-        font-size: 18px;
-    }
-
-    .contacts_email {
-        margin-bottom: 23px;
-    }
-
-    .contacts_social {
-        justify-content: center;
-        margin-top: 23px;
-    }
-
-    .contacts_info {
-        text-align: center;
-    }
-
-    .contacts_info {
-        margin-top: 45px;
-    }
-
-    .footer_block {
-        text-align: center;
-    }
-
-    .footer_section {
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .brands_block {
-        flex-direction: column;
-    }
-
-    .service_title {
-        text-align: center;
-    }
-
-    .intro_title {
-        text-align: center;
-    }
-
-    .intro_block {
-        display: none;
-    }
-
-    .intro_block_2 {
-        display: block;
-    }
-    
-}
-
-// 575
-
-@media (max-width: 575.98px) {
-    .jam_item {
-        
-    }
-    
-    .tasty {
-        min-height: 400px;
-    }
-
-    .intro_item_text {
-        font-size: 20px;
-    }
-
-    .perfect_text {
-        width: 100%;
-    }
-
-    .intro_agro {
-        font-size: 20px;
-    }
-
-    .intro {
-        min-height: 100px;
-    }
-
-    .prog_item {
-        display: flex;
-        justify-content: center;
-    }
-
-    .prog_margin {
-        margin-left: 40px;
-    }
-
-    
-}
+@import "_media";
