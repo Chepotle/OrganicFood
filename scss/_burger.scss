@@ -42,22 +42,20 @@
     top: 0;
     width: 0;
     height: 100vh;
+    min-height: 544px;
     background-color: #fcdb5a;
     z-index: 1;
     transition-duration: 0.5s;
 }
 
 .burger_menu {
-    position: relative;
-    top: 60px;
+    padding-top: 80px;
     height: 100%;
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    li {
-        margin-bottom: 55px;
-    }
+    justify-content: space-evenly;
+    
 }
 
 .burger_link {
